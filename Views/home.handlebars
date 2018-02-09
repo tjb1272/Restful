@@ -1,0 +1,40 @@
+<style>
+table{
+	width:100%; 
+	border-collapse:collapse; 
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;	
+}
+td{ 
+	padding:10px; 
+}
+tr{
+	background: #ffffff;
+}
+tr:hover {
+    background-color: #3784c2b6;
+}
+th{
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(15, 83, 192, 0.719)
+}
+</style>
+
+<div>
+<table>
+    <tbody>
+        <tr>
+            <th>Artist Name</th>
+            <th>Album</th>
+        </tr>
+        {{#albums}}
+        <tr>
+            <td>{{Artist.Name}}</td>
+            <td>{{Title}}</td>
+        </tr>
+        {{/albums}}
+    </tbody>
+</table>
+</div>
